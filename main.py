@@ -9,11 +9,11 @@ system = platform.system()
 downloads_path = None
 
 if system == "Linux":
-    downloads_path = "/mnt/f/Downloads"
+    downloads_path = config.linux_downloads_path
 elif system == "Darwin":
-    downloads_path = "~/Downloads"
+    downloads_path = config.mac_downloads_path
 else:
-    downloads_path = "D:\Downloads"
+    downloads_path = windows_downloads_path
 
 def __init__(self):
     self.reddit = praw.Reddit(

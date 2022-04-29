@@ -1,3 +1,6 @@
+run:
+	python main.py
+
 wsl-cleanup:
 	rm -rf /mnt/f/Users/derek/Downloads/downloaded
 	rm -rf ./top10postsdaily.mp4
